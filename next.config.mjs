@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-};
+  output: 'export',
+  basePath: '/MiniLink', // Your repository name
+  images: {
+    unoptimized: true, // GitHub Pages doesn't support Next.js Image Optimization
+  },
+}
 
-export default nextConfig;
+module.exports = nextConfig
